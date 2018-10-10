@@ -1,0 +1,41 @@
+{
+    "name": "mastani/laravel-sorna-sms",
+    "description": "Sorna SMS laravel integration",
+	"keywords": [
+        "laravel",
+        "sorna-sms",
+        "sms"
+    ],
+    "type": "library",
+	"homepage": "https://github.com/mastani/laravel-sorna-sms",
+    "license": "MIT",
+	"authors": [
+        {
+            "name": "Amin Mastani",
+            "email": "amin.mastani@yahoo.com"
+        }
+    ],
+    "require": {
+        "illuminate/contracts": "5.*",
+        "illuminate/support": "5.*",
+        "econea/nusoap": "~0.9.5.1"
+	},
+    "require-dev": {
+        "phpunit/phpunit" : "7.*"
+    },
+	"autoload": {
+        "psr-4": {
+            "mastani\\SornaSMS\\": "src"
+        }
+    },
+	"extra": {
+        "laravel": {
+            "providers": [
+                "mastani\\SornaSMS\\SornaSMSServiceProvider"
+            ],
+            "aliases": {
+                "SornaSMS": "mastani\\SornaSMS\\SornaSMSFacade"
+            }
+        }
+    }
+}

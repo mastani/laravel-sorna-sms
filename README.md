@@ -39,8 +39,8 @@ Next up, the service provider must be registered:
 
 ```php
 $sms = new SornaSMS();
-$result = $map->getSystemCredit(); // return Array( [success] => 1 [result] => 105000 )
-$result = $map->sendSMS('mobile number', 'message'); // return Array( [success] => 1 [result] => 8830401037900810478 )
+$result = $sms->getSystemCredit(); // return Array( [success] => 1 [result] => 105000 )
+$result = $sms->sendSMS('mobile number', 'message'); // return Array( [success] => 1 [result] => 8830401037900810478 )
 ```
 
 ## Function
